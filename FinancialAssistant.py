@@ -7,7 +7,6 @@ import textwrap
 
 
 st.set_page_config( layout="wide")
-
 last_quater_loss = st.sidebar.number_input("Last Quater Loss (%)", value = 15)
 with st.sidebar.expander("Portfolio Assumption"):
 
@@ -22,13 +21,12 @@ today = datetime.date.today()
 # create a date range from 2021-01-01 to the current date with monthly frequency
 dates = pd.date_range(start='2016-01-01', end=today, freq='Q')
 yrs = int(len(dates)/4)
-# create a dataframe with the date range as the index and some random values as the column
 df = pd.DataFrame({"Date":dates})
 df["Portfolio"] = starting_portfolio_value*((1+Average_Expected_return/400)**df.index)
 df["Portfolio"].iloc[-1] = df["Portfolio"].iloc[-2]*(1-last_quater_loss/100)
 
 
-st.title("Emotionally Intelligent Financial Assistant")
+st.title("Emotionally Smart Financial Assistant")
 col1, col2 = st.columns([0.7,0.3])
 
 # display the dataframe
