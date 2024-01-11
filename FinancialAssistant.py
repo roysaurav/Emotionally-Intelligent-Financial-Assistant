@@ -57,9 +57,8 @@ with col1:
 
 @st.cache_data
 def getting_answers(yrs,last_quater_loss ):
-  api_key = "jXj7LU9R4OX1bMicO0zs9W0rmDKZhod6pS6EmmTu"
 # ToDo :- get key as environment variable
-  co = cohere.Client(api_key)
+  co = cohere.Client(st.secrets["COHERE_KEY"])
 
   response = co.generate(
     prompt=f'''My clients portfolio has worked well for the last {yrs} years. During last quater it took a hit of {last_quater_loss}%. My emotional client is very worried about his future. Please explain my client the situtaion in 50 words.
