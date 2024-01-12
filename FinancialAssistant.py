@@ -103,3 +103,12 @@ for i in range(1, len(client_output)-1):
 
 
 st.write('''<p style="font-size: 25px; text-align: center;"><b><a href="https://forms.office.com/r/TWmvm6VMp5"> Contact us for more information</a></b> </p>''',unsafe_allow_html=True)
+
+Discliamer = '''
+<p style="font-size: 12px; color: lightgrey;">
+This site is for information and entertainment purposes only. The owner of this site is not an investment advisor, financial planner, nor a legal or tax professional. The articles and content on this site are of a general informational nature only and should not be relied upon for individual circumstances. The content and opinions expressed on this site are provided by the authors of this site and are theirs alone. Said content and opinions are not provided by any third party mentioned on this site and have not been reviewed, approved, or otherwise endorsed by any such third parties.
+</p>
+
+
+'''
+st.write(Discliamer, unsafe_allow_html=True)
