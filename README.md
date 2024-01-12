@@ -1,4 +1,6 @@
-# Emotionally Intelligent Financial Assistant
+# AIFinCom
+
+ AI tool to generate financial communication for advisors and analyst for their prospective clients.
 
 This project is a web application that uses artificial intelligence to create customized and timely messages for financial advisors to communicate with their clients. The application analyzes the clients’ profiles, preferences, and goals, and generates relevant and personalized content that helps the advisors build trust and loyalty. This project aims to enhance the quality and efficiency of client communication for financial advisors, and increase their retention and satisfaction rates.
 
