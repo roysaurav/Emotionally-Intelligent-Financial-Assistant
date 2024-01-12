@@ -102,3 +102,4 @@ for i in range(1, len(client_output)-1):
 
 
 
+st.write('''<p style="font-size: 25px; text-align: center;"><b><a href="https://forms.office.com/r/TWmvm6VMp5"> Contact us for more information</a></b> </p>''',unsafe_allow_html=True)
