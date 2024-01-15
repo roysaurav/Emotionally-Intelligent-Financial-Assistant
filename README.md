@@ -6,7 +6,7 @@ This project is a web application that uses artificial intelligence to create cu
 
 ## Demo
 
-You can try out the web application here: [Emotionally Smart Financial Assistant](https://emotionally-smart-financial-assistant.streamlit.app)
+You can try out the web application here: [Financial Assistant AI Helper](https://emotionally-smart-financial-assistant.streamlit.app)
 
 
 ![Sample Output](./SampleOutput.png)

@@ -26,7 +26,7 @@ df["Portfolio"] = starting_portfolio_value*((1+Average_Expected_return/400)**df.
 df["Portfolio"].iloc[-1] = df["Portfolio"].iloc[-2]*(1-last_quater_loss/100)
 
 
-st.title("Financial Assistant AI Helpe")
+st.title("Financial Assistant AI Helper")
 col1, col2 = st.columns([0.7,0.3])
 
 # display the dataframe
