@@ -103,7 +103,7 @@ col1, col2, col3 = st.columns([1,1,1])
 
 with col2:
   if st.button("Click Here for PowerPoint Format Download", type="primary"):
-    st.write('''<p style="font-size: 25px; text-align: center;"><b><a href="https://forms.office.com/r/TWmvm6VMp5"; style="rcolor: green";> Contact us for enabling this feature</a></b> </p>''',unsafe_allow_html=True)
+    st.write('''<p style="font-size: 25px; text-align: center;"><b><a href="https://forms.office.com/r/TWmvm6VMp5"; style="color: green";> Contact us for enabling this feature</a></b> </p>''',unsafe_allow_html=True)
   else:
     st.write('''<p style="font-size: 25px; text-align: center;"><b><a href="https://forms.office.com/r/TWmvm6VMp5" > Contact us for more information</a></b> </p>''',unsafe_allow_html=True)
 Discliamer = '''
