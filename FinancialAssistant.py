@@ -24,13 +24,6 @@ yrs = int(len(dates)/4)
 df = pd.DataFrame({"Date":dates})
 df["Portfolio"] = starting_portfolio_value*((1+Average_Expected_return/400)**df.index)
 df["Portfolio"].iloc[-1] = df["Portfolio"].iloc[-2]*(1-last_quater_loss/100)
-
-
-st.title("Financial Assistant AI Helper")
-col1, col2 = st.columns([0.7,0.3])
-
-# display the dataframe
-fig = df.plot(kind="line",x="Date",y="Portfolio" ,backend="plotly")
 st.markdown(
     """
     <style>
@@ -47,6 +40,24 @@ st.markdown(
     </style>
     """,unsafe_allow_html=True
 )
+
+st.title("Financial Assistant AI Helper")
+intro = '''
+Do you want to save time and effort on creating (copy pasting graphs) and updating presentations?
+
+AIFInCon is a smart tool that can do it for you.
+
+<b>See here how AIFInCon can assist a financial advisor whose client’s portfolio has declined. 
+AIFInCon interpreted graphs, generated talking points, 
+and creates powerpoint slides automatically saving hours of time.</b>
+'''
+
+st.write(intro, unsafe_allow_html=True)
+col1, col2 = st.columns([0.7,0.3])
+
+# display the dataframe
+fig = df.plot(kind="line",x="Date",y="Portfolio" ,backend="plotly")
+
 
 
 with col1:
