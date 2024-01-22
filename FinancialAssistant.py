@@ -51,7 +51,6 @@ AIFInCon is a smart tool that can do it for you.
 AIFInCon interpreted graphs, generated talking points, 
 and creates powerpoint slides automatically saving hours of time.</b>
 '''
-
 st.write(intro, unsafe_allow_html=True)
 col1, col2 = st.columns([0.7,0.3])
 
